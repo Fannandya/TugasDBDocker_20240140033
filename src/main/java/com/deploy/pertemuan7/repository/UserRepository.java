@@ -1,7 +1,6 @@
 package com.deploy.pertemuan7.repository;
 
 import com.deploy.pertemuan7.model.User;
-import com.example.demo.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
