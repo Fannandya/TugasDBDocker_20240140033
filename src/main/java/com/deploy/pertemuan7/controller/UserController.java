@@ -20,7 +20,7 @@ public class UserController {
     @PostMapping
     public String createUser(@RequestBody User request){
         userService.addUser(request);
-        request "user berhasil ditambahkan";
+        return  "user berhasil ditambahkan";
     }
 
     @GetMapping
@@ -31,7 +31,7 @@ public class UserController {
     @DeleteMapping("/{id}")
     public String deleteUser(@PathVariable String id){
         userService.deleteUser(id);
-        return "user berhasil dihapus"
+        return "user berhasil dihapus";
     }
 
     @GetMapping("/{id}")
@@ -42,6 +42,6 @@ public class UserController {
     @PutMapping
     public String updateUser(@PathVariable String id, @RequestBody User request){
         userService.updateUser(id, request);
-        return "data user berhasil diupdate"
+        return "data user berhasil diupdate";
     }
 }

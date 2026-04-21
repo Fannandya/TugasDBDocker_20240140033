@@ -26,7 +26,7 @@ public class UserService {
     }
 
     public User getUserById(String id){
-        return userRepository.findById(id).orElse(null)
+        return userRepository.findById(id).orElse(null);
     }
 
     public User updateUser(String id, User request){
