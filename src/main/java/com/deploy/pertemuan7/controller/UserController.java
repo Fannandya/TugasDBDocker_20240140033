@@ -33,4 +33,15 @@ public class UserController {
         userService.deleteUser(id);
         return "user berhasil dihapus"
     }
+
+    @GetMapping("/{id}")
+    public User getUserById(@PathVariable String id){
+        return userService.getUserById(id);
+    }
+
+    @PutMapping
+    public String updateUser(@PathVariable String id, @RequestBody User request){
+        userService.updateUser(id, request);
+        return "data user berhasil diupdate"
+    }
 }
